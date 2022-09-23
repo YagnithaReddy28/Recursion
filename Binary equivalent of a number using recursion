@@ -1,0 +1,8 @@
+Write a python program takes a number and finds the binary equivalent of a number recursively.
+def convert(x):
+    if x>0:
+        convert(x//2)
+        print(x%2,end="")
+        
+a=int(input())
+convert(a)
